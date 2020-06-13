@@ -4,6 +4,141 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+  font-family: 'Lato', 'Noto Sans JP', sans-serif;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 17px;
+}
+
+.font-lr {
+  font-size: 17px;
+}
+
+.font-lg {
+  font-size: 25px;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mg-lg {
+  margin-bottom: 80px !important;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.btn, .btn-float, .btn-fill, .btn-letter-spacing, .btn-shadow, .btn-solid, .btn-radius {
+  background-color: white;
+  color: Black;
+  border: 1px solid Black;
+  padding: 10px 40px;
+  margin: 50px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-float {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-float:hover {
+  background-color: Black;
+  color: white;
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn-fill {
+  background-color: Black;
+  color: white;
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-fill:hover {
+  background-color: white;
+  color: Black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-letter-spacing {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-letter-spacing:hover {
+  background-color: Black;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.btn-shadow {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-shadow:hover {
+  -webkit-transform: translate(-2.5px, -2.5px);
+          transform: translate(-2.5px, -2.5px);
+  -webkit-box-shadow: 5px 5px 0 0 Black;
+          box-shadow: 5px 5px 0 0 Black;
+}
+
+.btn-solid {
+  -webkit-box-shadow: 2px 2px 0 0 Black;
+          box-shadow: 2px 2px 0 0 Black;
+  border-radius: 6px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-solid:hover {
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-radius {
+  border-radius: 50px;
+  background: #FFB549;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-radius:hover {
+  background: white;
+  color: #FFB549;
+  border: 1px solid #FFB549;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -26,6 +161,24 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .font-sm {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 19px;
+  }
+  .font-lr {
+    font-size: 23px;
+  }
+  .font-lg {
+    font-size: 36px;
+  }
+  .mg-lg {
+    margin-bottom: 150px !important;
+  }
+  .pb-lg {
+    padding-bottom: 150px !important;
+  }
 }
 
 @media (min-width: 1280px) {

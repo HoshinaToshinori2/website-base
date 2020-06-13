@@ -1,0 +1,71 @@
+.btn{
+    background-color: $cWhite;
+    color: $cBlack;
+    border: 1px solid $cBlack;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-float{
+    @extend .btn;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $cBlack;
+        color: $cWhite;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+.btn-fill{
+    @extend .btn;
+    background-color: $cBlack;
+    color: $cWhite;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    &:hover{
+        background-color: $cWhite;
+        color: $cBlack;
+        box-shadow: none;
+    }
+}
+.btn-letter-spacing{
+    @extend .btn;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $cBlack;
+        color: $cWhite;
+        letter-spacing: 5px;
+    }
+}
+.btn-shadow{
+    @extend .btn;
+    transition: all 0.3s;
+    &:hover{
+        transform: translate(-2.5px, -2.5px);
+        box-shadow: 5px 5px 0 0 $cBlack;
+    }
+}
+.btn-solid{
+    @extend .btn;
+    box-shadow: 2px 2px 0 0 $cBlack;
+    border-radius: 6px;
+    transition: all 0.3s;
+    &:hover{
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+}
+.btn-radius{
+    @extend .btn;
+    border-radius: 50px;
+    background: $cOrange;
+    border: 1px solid $cWhite;
+    color: $cWhite;
+    transition: all 0.3s;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    &:hover{
+        background: $cWhite;
+        color: $cOrange;
+        border: 1px solid $cOrange;
+    }
+}
